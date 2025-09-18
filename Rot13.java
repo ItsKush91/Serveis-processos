@@ -20,7 +20,9 @@ public class Rot13{
     }
     public static String xifraRot13(String input) {
         String res = "";
-        String alphabet = "abcdefghijklmnñopqrstuvwxyz";
+        char[] low = "abcdefghijklmnñopqrstuvwxyz".toCharArray();
+        char[] up = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".toCharArray();
+        /*
         for (char c : input.toCharArray()) {
             if (c >= 'a' && c <= 'z') {
                 res += (char) ((c - 'a' + 13) % 26 + 'a');
@@ -29,12 +31,14 @@ public class Rot13{
             } else {
                 res += c;
             }
-        }
+        }*/
         return res;
     }
     public static String DesxifraRot13(String input) {
         String res = "";
-        String alphabet = "abcdefghijklmnñopqrstuvwxyz";
+        char[] low = "abcdefghijklmnñopqrstuvwxyz".toCharArray();
+        char[] up = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".toCharArray();
+        /*
         for (char c : input.toCharArray()) {
             if (c >= 'a' && c <= 'z') {
                 --
@@ -43,7 +47,7 @@ public class Rot13{
             } else {
                 res += c;
             }
-        }
+        }*/
         return res;
     }
 }
